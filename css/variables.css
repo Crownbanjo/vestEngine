@@ -1,0 +1,131 @@
+:root {
+  
+  /* font */
+  font-family: inter, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  /* background color */
+  --blue: rgba(0, 62, 203, 1);
+  --light-blue:  rgba(245, 246, 250, 1);
+    
+  /* color */
+  --grey: rgba(204, 204, 204, 1);
+  --black: rgba(68, 68, 68, 1);
+  --white:rgba(255, 255, 255, 1);
+
+  /* font sizes */ 
+}
+
+
+/* layout css */
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.layout {
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-blue);
+}
+
+.page1 {
+  background-color: var(--blue);
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+  .logo img {
+    height: 20em;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+  }
+  .icon {
+    width: 19em;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+  }
+}
+.page2 {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.top {
+  height: 4px;
+  width: 100%;
+  background-color: var(--light-blue);
+}
+
+.page2 .detials {
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 35px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 5px;
+
+  h2 {
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .log-in {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    input {
+      padding-right: 30px;
+      padding: 10px;
+      margin-top: 15px;
+      border: 0.5px solid;
+      border-radius: 5px;
+      color: var(--grey);
+    }
+  }
+
+  button {
+    color: var(--white);
+    background-color: var(--blue);
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+  }
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+
+  li {
+    list-style-type: none;
+    a {
+      flex-direction: row;
+      color: var(--black);
+      font-size: 10px;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+  }
+}
