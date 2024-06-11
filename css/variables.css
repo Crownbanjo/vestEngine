@@ -93,7 +93,8 @@ main {
       margin-top: 10px;
       border: 0.5px solid;
       border-radius: 5px;
-      color: var(--grey);
+      color: var(--black);
+      border-color: var(--grey);
     }
   }
 
