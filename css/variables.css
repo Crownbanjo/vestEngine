@@ -21,9 +21,12 @@ main {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-wrap:wrap;
   flex-direction: row;
 }
 .layout {
+  flex-grow: 1;
+  flex-basis: 200;
   max-height: 100vh;
   display: flex;
   align-items: center;
@@ -32,6 +35,7 @@ main {
 }
 
 .page1 {
+  flex-grow: 1;
   background-color: var(--blue);
   width: 50vw;
   height: 100vh;
@@ -50,6 +54,7 @@ main {
   }
 }
 .page2 {
+ 
   width: 50vw;
   height: 100vh;
   display: flex;

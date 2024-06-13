@@ -33,7 +33,6 @@
     }
   }
   .country {
-    border-color: var(--black);
     position: relative;
     margin-top: 10px;
     width: 100%;
@@ -63,16 +62,22 @@
     width: 100%;
     border: 0.5px solid;
     border-radius: 5px;
-    border-color: var(--black);
-    color: var(--black);
   }
 }
-span {
+
+.terms-condition {
+  margin-top: 10px;
+  display: flex;
   color: var(--black);
   font-size: 10px;
+  gap: 5px;
+
   a {
     color: var(--blue);
   }
+}
+.terms-condition label input {
+  margin-top: 0 !important;
 }
 
 .new {
